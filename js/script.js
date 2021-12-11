@@ -7,9 +7,9 @@ menuToggle.addEventListener("click", function () {
 
 const dark = document.querySelector(".dark input");
 const tulisanHero = document.querySelector(".hero");
-const tulisanAbout = document.querySelector(".konten");
+// const tulisanAbout = document.querySelector(".konten");
 dark.addEventListener("click", function () {
   document.body.classList.toggle("darkMode");
   tulisanHero.classList.toggle("tulisanDarkMode");
-  tulisanAbout.classList.toggle("tulisanDarkMode");
+  // tulisanAbout.classList.toggle("tulisanDarkMode");
 });

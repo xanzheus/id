@@ -1,5 +1,5 @@
 /* FONT */
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Montserrat:wght@700&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -13,6 +13,7 @@ html {
 body {
   font-family: sans-serif;
   overflow-x: hidden;
+  font-family: Helvetica, sans-serif;
 }
 
 /* Navbar */
@@ -161,16 +162,17 @@ div.container {
 section.home h1 {
   font-size: 5.5em;
   color: #fdcb6e;
-  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 section.home h2 {
   font-size: 2em;
   color: #00b894;
+  font-family: "Montserrat", sans-serif;
 }
 section.home h3 {
   font-size: 2em;
   /* color: #fdcb6e; */
-  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 section .button {
@@ -205,14 +207,26 @@ section.feedback h1 {
   color: #00b894;
 }
 
-.konten h3 {
-  font-size: 2em;
-  font-family: "Fuzzy Bubbles", cursive;
-  margin-bottom: 15px;
+.konten .bubble {
+  position: relative;
 }
-.konten p {
+
+.konten .bubble h3 {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  position: absolute;
+}
+.konten .bubble p {
+  margin-top: 50px;
   font-size: 1em;
-  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+}
+
+.bubble img {
+  margin-top: -120px;
+  margin-left: -80px;
 }
 
 .konten {
@@ -312,7 +326,7 @@ section.feedback h1 {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 100px;
-  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montserrat", sans-serif;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -384,6 +398,9 @@ footer {
 
 /* mobile */
 @media screen and (max-width: 576px) {
+  nav {
+    margin-left: -70px;
+  }
   nav ul {
     position: absolute;
     right: 0;
@@ -407,6 +424,12 @@ footer {
 
   .menu-toggle {
     display: flex;
+  }
+
+  .menu-toggle,
+  .dark,
+  .dark input {
+    margin-left: -70px;
   }
 
   div.container {
@@ -434,7 +457,7 @@ footer {
   section.home h1 {
     font-size: 2em;
     color: #fdcb6e;
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: "Montserrat", sans-serif;
   }
   section.home h2 {
     font-size: 1em;
@@ -443,11 +466,12 @@ footer {
   section.home h3 {
     font-size: 1em;
     /* color: #fdcb6e; */
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: "Montserrat", sans-serif;
   }
 
   .logo {
     width: 80%;
+    margin-bottom: 50px;
   }
 
   .logo img {
@@ -456,12 +480,12 @@ footer {
 
   .konten h3 {
     font-size: 2em;
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 15px;
   }
   .konten p {
     font-size: 0.7em;
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: "Montserrat", sans-serif;
   }
 
   .konten {
@@ -563,7 +587,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 100px;
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: "Montserrat", sans-serif;
   }
 
   .tertarik {
